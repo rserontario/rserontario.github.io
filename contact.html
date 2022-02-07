@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+
+  <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+
+  <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+
+  <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+  <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+  <link rel="stylesheet" type="text/css" 
+  <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+  <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+  <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+  <link rel="stylesheet" type="text/css" href="css/util.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Ron's Contact</title>
+<style>
+  body {
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b3dced+0,29b8e5+50,bce0ee+100;Blue+Pipe */
+  background: rgb(179, 220, 237); /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    rgba(179, 220, 237, 1) 0%,
+    rgba(41, 184, 229, 1) 50%,
+    rgba(188, 224, 238, 1) 70%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(179, 220, 237, 1) 0%,
+    rgba(41, 184, 229, 1) 50%,
+    rgba(188, 224, 238, 1) 70%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    rgba(179, 220, 237, 1) 0%,
+    rgba(41, 184, 229, 1) 50%,
+    rgba(188, 224, 238, 1) 70%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#bce0ee',GradientType=0 ); /* IE6-9 */;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: blue;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenav a:hover {
+    color: white;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidenav {
+      padding-top: 15px;
+    }
+
+    .sidenav a {
+      font-size: 18px;
+    }
+  }
+</style>
+
+</head>
+<body>
+
+  <header class="header">
+    <div class="overlay has-fade"></div>
+
+    <nav class="container container--pall flex flex-jc-sb flex-ai-c">
+      
+      <!--My logo at top of page-->
+        <a href="/" class="header__logo">
+          <img src="/images/Final_RSER_Logo1.png" alt="Ron's Small Engines logo">
+        </a>
+        <h3 style="font-size: 15px;">(647) 955-1592</h3>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="/index.html">Home</a>
+  <a href="/about.html">About</a>
+  <a href="/services.html">Services</a>
+  <a href="https://www.yardbook.com/149665/pay_now" target="_blank">Pay Now</a>
+  
+</div>
+
+<!--Hamburger-->
+<span style="font-size:35px;cursor:pointer;color:blue" onclick="openNav()">&#9776;</span>
+
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "200px";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+</script>
+
+
+
+
+        </div>
+      </nav>
+    </nav>
+
+  </header>
+
+ <div class="container-contact100">
+  <div class="wrap-contact100">
+    <form class="contact100-form validate-form" action="https://formspree.io/f/xbjpbyon" method="POST" id="my-form">
+      <span class="contact100-form-title">
+        Send  Us A Message
+      </span>
+
+      <label class="label-input100" for="first-name">Tell us your name *</label>
+      <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Type first name">
+        <input id="first-name" class="input100" type="text" name="first-name" placeholder="First name">
+        <span class="focus-input100"></span>
+      </div>
+      <div class="wrap-input100 rs2-wrap-input100 validate-input" data-validate="Type last name">
+        <input class="input100" type="text" name="last-name" placeholder="Last name">
+        <span class="focus-input100"></span>
+      </div>
+
+      <label class="label-input100" for="email">Enter your email *</label>
+      <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+        <input id="email" class="input100" type="text" name="email" placeholder="Eg. example@email.com">
+        <span class="focus-input100"></span>
+      </div>
+
+      <label class="label-input100" for="phone">Enter phone number</label>
+      <div class="wrap-input100">
+        <input id="phone" class="input100" type="text" name="phone" placeholder="Eg. +1 800 000000">
+        <span class="focus-input100"></span>
+      </div>
+
+      <label class="label-input100" for="message">Message *</label>
+      <div class="wrap-input100 validate-input" data-validate="Message is required">
+        <textarea id="message" class="input100" name="message" placeholder="Write us a message"></textarea>
+        <span class="focus-input100"></span>
+      </div>
+
+      <div class="container-contact100-form-btn">
+        <button class="contact100-form-btn">
+          Send Message
+        </button>
+        
+      </div>
+      <div id="status"></div>
+  </form>
+  
+
+    <div class="contact100-more flex-col-c-m" style="background-image: url('images/bg-01.jpg');">
+      <div class="flex-w size1 p-b-47">
+        <div class="txt1 p-r-25">
+          <span class="lnr lnr-map-marker"></span>
+        </div>
+
+        <div class="flex-col size2">
+          <span class="txt1 p-b-20">
+            Address
+          </span>
+
+          <span class="txt2">
+            14 Lawson Drive, Warkworth ON K0K 3K0
+          </span>
+        </div>
+      </div>
+
+      <div class="dis-flex size1 p-b-47">
+        <div class="txt1 p-r-25">
+          <span class="lnr lnr-phone-handset"></span>
+        </div>
+
+        <div class="flex-col size2">
+          <span class="txt1 p-b-20">
+            Lets Talk
+          </span>
+
+          <span class="txt2">
+            +1 (647) 955-1592
+          </span>
+        </div>
+      </div>
+
+      <div class="dis-flex size1 p-b-47">
+        <div class="txt1 p-r-25">
+          <span class="lnr lnr-envelope"></span>
+        </div>
+
+        <div class="flex-col size2">
+          <span class="txt1 p-b-20">
+            General Support
+          </span>
+
+          <span class="txt2">
+            rserontario@gmail.com
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div id="dropDownSelect1"></div>
+
+<script src="./app/js/form.js"></script>
+
+<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+
+<script src="vendor/animsition/js/animsition.min.js"></script>
+
+<script src="vendor/bootstrap/js/popper.js"></script>
+
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+<script src="vendor/select2/select2.min.js"></script>
+
+<script>
+  $(".selection-2").select2({
+    minimumResultsForSearch: 20,
+    dropdownParent: $('#dropDownSelect1')
+  });
+</script>
+
+<script src="vendor/daterangepicker/moment.min.js"></script>
+
+<script src="vendor/daterangepicker/daterangepicker.js"></script>
+
+<script src="vendor/countdowntime/countdowntime.js"></script>
+
+<script src="js/main.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'UA-23581568-13');
+</script>
+
+
+  <script src="/app/js/script.js"></script>
+</body>
+</html>

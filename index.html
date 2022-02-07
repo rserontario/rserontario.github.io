@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" href="images/wrench.ico">
+  <title>Ron's Small Engine Repair</title>
+
+  <style>
+    body {
+      font-family: "Montserrat", sans-serif;
+    }
+  
+    .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b3dced+0,29b8e5+50,bce0ee+100;Blue+Pipe */
+  background: rgb(179, 220, 237); /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    rgba(179, 220, 237, 1) 0%,
+    rgba(41, 184, 229, 1) 50%,
+    rgba(188, 224, 238, 1) 70%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(179, 220, 237, 1) 0%,
+    rgba(41, 184, 229, 1) 50%,
+    rgba(188, 224, 238, 1) 70%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    rgba(179, 220, 237, 1) 0%,
+    rgba(41, 184, 229, 1) 50%,
+    rgba(188, 224, 238, 1) 70%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#bce0ee',GradientType=0 ); /* IE6-9 */;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+  
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: blue;
+      display: block;
+      transition: 0.3s;
+    }
+  
+    .sidenav a:hover {
+      color: white;
+    }
+  
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+  
+    @media screen and (max-height: 450px) {
+      .sidenav {
+        padding-top: 15px;
+      }
+  
+      .sidenav a {
+        font-size: 18px;
+      }
+    }
+  </style>
+
+</head>
+<body>
+
+  <header class="header">
+    <div class="overlay has-fade"></div>
+
+    <nav class="container container--pall flex flex-jc-sb flex-ai-c">
+      <!--My logo at top of page-->
+        <a href="/" class="header__logo">
+          <img src="/images/Final_RSER_Logo1.png" alt="Ron's Small Engines logo">
+        </a>
+        <h3>(647) 955-1592</h3>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="/about.html">About</a>
+  <a href="/services.html">Services</a>
+  <a href="/contact.html">Contact</a>
+  <a href="https://www.yardbook.com/149665/pay_now" target="_blank">Pay Now</a>
+</div>
+
+<!--Hamburger-->
+<span style="font-size:35px;cursor:pointer;color:blue" onclick="openNav()">&#9776;</span>
+
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "200px";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+</script>
+  </div>
+</nav>
+
+
+
+  </header>
+
+  <section class="hero">
+    <div class="container">
+        <div class="hero__image">
+        
+        <div class="hero__text container--pall">
+          <h1>Servicing and Repairing Small Engines</h1>
+          <p>Servicing Ontario in Northumberland and Peterborough Counties plus Surrounding Areas.</p>
+        </div>
+        </div>
+        
+    </div>
+  </section>
+
+
+  <section class="feature">
+
+    <div class="feature__content container container--pall">
+
+        <div class="feature__intro">
+            <h2>Why choose Ron's?</h2>
+            <p>
+              I offer the best service and repair for your small engine. You will like my prices and will find them very afforable.
+            </p>
+        </div>
+        
+    
+        <div class="feature__grid">
+          
+          <div class="feature__item">
+            <div class="feature__icon"><img src="/images/home.svg" /></div>
+            <div class="feature__title">
+              In-Shop Repair and Service
+            </div>
+            <div class="feature__description">
+              The shop is modern with low overhead to keep prices low. All makes and models can be serviced.
+              A full itemized estimate will be provided before any work is performed.
+            </div>
+          </div>
+    
+          <div class="feature__item">
+            <div class="feature__icon"><img src="/images/truck.svg" /></div>
+            <div class="feature__title">
+              Pick up and Delivery Service
+            </div>
+            <div class="feature__description">
+              For a small flat rate of $25, your equipment can be picked up and delivered after service is completed.
+              *higher rate outside of the two counties.
+            </div>
+          </div>
+    
+          <div class="feature__item">
+            <div class="feature__icon"><img src="/images/monitor.svg" /></div>
+            <div class="feature__title">
+              Fast Parts Ordering
+            </div>
+            <div class="feature__description">
+              If your parts are not in stock, they usually can be ordered and delivered in a couple of days.
+            </div>
+          </div>
+    
+              
+        </div>
+    </div>
+
+  </section>
+
+  <section>
+    
+            <div>
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+            
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            
+              <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+           
+              <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            
+              
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <p id="border-alert">Thanks for your Business in 2021!<br><br>
+                      I will be unavailable from November 2021 until May 2022. Please call me anytime to book an appointment in May.
+
+                      <a id="pad-left"></span></a></p>
+                  </div>
+                <!--
+                  <div class="item">
+                    <p id="border-alert">2021 Fall/Winter Special<br>
+                     Snowblower Tune-Up for only $54.99*<br>
+                     Includes: <br>
+                     1. New Spark Plug<br>
+                     2. Oil Change<br>
+                     3. Thorough Inspection Check<br>
+                     4. Lube linkage, check tire pressures<br>
+                     *Additional parts and/or repair at an extra cost<br>
+                    
+                      <a id="pad-left"></span></a>
+                    </p>
+                  </div>
+                
+                  <div class="item">
+                    <p id="border-alert">Customer Survey Results:<br><br>
+                    06/25/2021 <br>Score 10/10 <br> Ron brought back to life a 40 year old rotor tiller. It took a little while to find all the parts and grease but he did
+                    it. He pays attention to the details and explains everything. You could not find a better shop to get things repaired. <br>
+                    Paul H.
+                      <a id="pad-left"></span></a>
+                    </p>
+                  </div>
+                  
+                  <div class="item">
+                    <p id="border-alert">2021 Fall/Winter Special<br>
+                      Chainsaw Tune-Up for only $44.99*<br>
+                      Includes: <br>
+                      1. New Spark Plug<br>
+                      2. New Air Filter<br>
+                      3. New Fuel Filter<br>
+                      4. Bonus Chain Sharpening<br>
+                      *Additional parts and/or repair at an extra cost<br>
+                      
+                      <a id="pad-left"></span></a>
+                    </p>
+                  </div>
+                
+                  <div class="item">
+                    <p id="border-alert">Customer Survey Results:<br>(click on text to stop scrolling)<br><br>
+                      06/25/2021 <br>Score 10/10 <br> Ron rebuilt the engine of our riding lawnmower. Now it not only looks like it just came off the factory floor but it
+                      also cuts grass perfectly. He pays attention to the details and explains things. If you want a small engine repair guy
+                      that takes pride in his work, this it the place to go. First class work. <br>
+                      Paul H.
+                      <a id="pad-left"></span></a>
+                    </p>
+                  </div>
+                
+                </div>
+              -->
+                
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+  
+  </section>
+  
+
+
+  <footer class="footer">
+    <div class="container">
+
+        <a class="footer__logo" href="#">
+          <img src="/images/Final_RSER_Logo1.png" alt="Ron's Small Engines logo">
+          </a>
+      
+          
+         
+          </div>
+       
+          <div class="footer__links col1">
+            <p style="font-size: 20px;">14 Lawson Drive<br>Warkworth, Ontario<br>K0K 3K0</p>
+            <p style="font-size: 20px;">Email: rserontario@gmail.com</p>
+            
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="legal.html">Legal Agreement</a>
+          </div>
+      
+         
+      
+        
+      
+          <div class="footer__copyright">
+            Copyright&copy;2021 R.S.E.R. All Rights Reserved.
+          </div>
+
+    </div>    
+  </footer>
+
+
+  <script src="/app/js/script.js"></script>
+</body>
+</html>

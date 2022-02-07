@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Ron's About</title>
+
+  <style>
+    body {
+      font-family: "Montserrat", sans-serif;
+    }
+  
+    .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b3dced+0,29b8e5+50,bce0ee+100;Blue+Pipe */
+  background: rgb(179, 220, 237); /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    rgba(179, 220, 237, 1) 0%,
+    rgba(41, 184, 229, 1) 50%,
+    rgba(188, 224, 238, 1) 70%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(179, 220, 237, 1) 0%,
+    rgba(41, 184, 229, 1) 50%,
+    rgba(188, 224, 238, 1) 70%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    rgba(179, 220, 237, 1) 0%,
+    rgba(41, 184, 229, 1) 50%,
+    rgba(188, 224, 238, 1) 70%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#bce0ee',GradientType=0 ); /* IE6-9 */;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+  
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: blue;
+      display: block;
+      transition: 0.3s;
+    }
+  
+    .sidenav a:hover {
+      color: white;
+    }
+  
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+  
+    @media screen and (max-height: 450px) {
+      .sidenav {
+        padding-top: 15px;
+      }
+  
+      .sidenav a {
+        font-size: 18px;
+      }
+    }
+  </style>
+
+</head>
+<body>
+
+  <header class="header">
+    <div class="overlay has-fade"></div>
+
+    <nav class="container container--pall flex flex-jc-sb flex-ai-c">
+
+      <!--My logo at top of page-->
+        <a href="/" class="header__logo">
+          <img src="/images/Final_RSER_Logo1.png" alt="Ron's Small Engines logo">
+        </a>
+        <h3>(647) 955-1592</h3>
+      
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="/index.html">Home</a>
+          <a href="/services.html">Services</a>
+          <a href="/contact.html">Contact</a>
+          <a href="https://www.yardbook.com/149665/pay_now" target="_blank">Pay Now</a>
+        </div>
+        
+        <!--Hamburger-->
+        <span style="font-size:35px;cursor:pointer;color:blue" onclick="openNav()">&#9776;</span>
+        
+        <script>
+          function openNav() {
+            document.getElementById("mySidenav").style.width = "200px";
+          }
+
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+          }
+        </script>
+
+    </div>
+  </nav>
+    </nav>
+  </header>
+
+<div class="content-wrapper">
+  <div class="two-column-wrapper">
+    <div class="profile-image-wrapper">
+      <img src="images/profile.jpg" alt="Ron">
+    </div>
+
+    <div class="profile-content-wrapper">
+      <h1>Hi, thanks for visiting my site.</h1>
+      <p>With years of experience of repairing small engines and performing maintenance service for myself, family and
+        friends, I found a niche in small engine repair and servicing. I also found troubleshooting of problems in
+        starting an engine to be difficult sometimes, become easier for me to accomplish.
+      </p>
+
+      <p>For this reason I decided to repair and service small engines full time and help my customers.
+        I will provide customers with a reasonable estimate and thorough repair and/or service. I also like to educate
+        my customers for correct starting or perhaps fuel mixing for a 2 stroke engine. </p>
+    </div>
+  </div>
+</div>
+</div>
+
+
+  <footer class="footer">
+    <div class="container">
+
+        <a class="footer__logo" href="#">
+          <img src="/images/Final_RSER_Logo1.png" alt="Ron's Small Engines logo">
+          </a>
+          
+                    
+               
+          <div class="footer__links col1">
+            <p style="font-size: 20px;">14 Lawson Drive<br>Warkworth, Ontario<br>K0K 3K0</p>
+            <p style="font-size: 20px;">Email: rserontario@gmail.com</p>
+             
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+                <a href="legal.html">Legal Agreement</a>
+          </div>
+          
+      
+          <div class="footer__copyright">
+            Copyright&copy;2021 R.S.E.R. All Rights Reserved.
+          </div>
+
+    </div>    
+  </footer>
+
+
+  <script src="/app/js/script.js"></script>
+</body>
+</html>
